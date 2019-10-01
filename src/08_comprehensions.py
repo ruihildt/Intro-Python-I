@@ -14,7 +14,7 @@ y = []
 
 # for i in range(5):
     # y.append(len(y)+1)
-y = [i + 1 for i in range(6)]
+y = [i for i in range(1,6)]
 
 print (y)
 
@@ -23,7 +23,7 @@ print (y)
 
 y = []
 
-y = [x**3 for x in range(10)]
+y = [x**3 for x in range(1,10)]
 
 print(y)
 
@@ -46,6 +46,6 @@ x = input("Enter comma-separated numbers: ").split(',')
 # What do you need between the square brackets to make it work?
 y = []
 
-y  = [i for i in x if int(i) %2 == 0]
+y  = [int(i) for i in x if int(i) %2 == 0]
 
 print(y)
