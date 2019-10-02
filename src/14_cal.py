@@ -35,6 +35,7 @@ year = datetime.now().year
 # - inputed year is between 1 and 9999
 # - inputed month is an integer
 # - inputed year is an integer
+# And throw a general error with usage examples.
 if (len(sys.argv) > 3 or (not 1 <= int(sys.argv[1]) <= 12) or (not 1 <= int(sys.argv[2]) <= 9999) or (not isinstance(month, int)) or (not isinstance(year, int))):
     print(f"**Input Error**\n\nPlease enter the month and year as arguments in the following format `MM YYYY` \nor `MM` to get the calendar for the current year. \n\nExample 1: \"9 1999\" will show you the calendar for September 1999\nExample 2: \"1\" will show you the calendar for January {year}\n")
     sys.exit()
